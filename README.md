@@ -6,6 +6,10 @@ A simple notes application built with React to practice fundamental React concep
 
 This project is a hands-on exercise focused on working with **forms and input fields** in React. Users can create, view, and delete notes — each with a title, priority level, category, and description. Notes are persisted in the browser using `localStorage`.
 
+## 🌐 Live Demo
+
+**➡️ [View Live App](https://dikidikay-notes-app.netlify.app/)**
+
 ## 🧠 React Concepts Learned
 
 ### Controlled Components
