@@ -55,10 +55,9 @@ App (notes state + deleteNote handler)
 
 The `setNotes` updater function is passed to `NoteForm` so it can add new notes, while `notes` and `deleteNote` are drilled through `NoteList` down to each `Note` component. This demonstrates **lifting state up** to a common ancestor and **prop drilling** to share data across the component tree.
 
-### Data Persistence with `useEffect` & `localStorage`
+### Side Effects with `useEffect`
 
-- **Reading:** The initial `notes` state is initialized from `localStorage` using a callback in `useState`.
-- **Writing:** A `useEffect` hook syncs the `notes` state to `localStorage` whenever it changes, ensuring data persists across browser sessions.
+The `useEffect` hook is used to perform **side effects** — in this case, syncing the `notes` state to `localStorage` whenever it changes, ensuring data persists across browser sessions. The initial `notes` state is also initialized from `localStorage` using a callback in `useState`.
 
 ## 🛠️ Tech Stack
 
